@@ -3,6 +3,7 @@
 
 Ссылки на модели:
 Best unet: https://drive.google.com/file/d/18hq5dogLmAIZMis4aclQnHFMQKvsdXQA/view?usp=drive_link
+
 Best gsd cnn: https://drive.google.com/file/d/1B46eXYg7HCFaDYPq7KS-BrtoRphG2W-r/view?usp=drive_link
 
 ## Эксперимент 1: сегментация зданий на спутниковых снимках (DeepLabV3)
