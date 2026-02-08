@@ -4,7 +4,7 @@
 
 Скачать в неё содержимое проекта GeoApp
 
-Скачать веса модели по ссылке и положить в папку weights
+Скачать веса модели по ссылке https://drive.google.com/file/d/18hq5dogLmAIZMis4aclQnHFMQKvsdXQA/view?usp=sharing и положить в папку weights
 
 Открыть cmd (Win)
 
@@ -39,3 +39,4 @@ D:\Projects\GeoApp>.venv\Scripts\activate
 
 
 (.venv) D:\Projects\GeoApp>streamlit run app.py
+
