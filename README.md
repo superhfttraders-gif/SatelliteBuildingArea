@@ -47,7 +47,7 @@
 ### Визуальная проверка
 - Добавлен интерактивный просмотр (ipywidgets): выбор `best/last`, настройка порога, визуализация `GT / Pred / Overlay` + сравнение площадей.
 
-## Эксперимент: U-Net с энкодером ResNet50 (transfer из DeepLabV3)
+## Эксперимент 2: U-Net с энкодером ResNet50 (transfer из DeepLabV3)
 
 Ноутбук: 2. Buildings_UNet.ipynb
 
