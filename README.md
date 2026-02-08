@@ -25,7 +25,7 @@
 - `BCEWithLogitsLoss(pos_weight=5.0)` + `DiceLoss` (компенсация дисбаланса классов и оптимизация перекрытия).
 
 ### Обучение
-- Оптимизатор: `AdamW(lr=5e-5, weight_decay=1e-4)` (дообучение на пониженном LR).
+- Оптимизатор: `AdamW(lr=lr 2e-4, weight_decay=1e-4)` (после выхода на плато дообучение на пониженном LR 5e-5).
 - Mixed precision (AMP) + gradient accumulation: `batch=8`, `accum=4` (эффективный batch = 32).
 - Gradient clipping: `max_grad_norm=1.0`.
 - Resume и сохранение чекпойнтов: `best_model.pt` (лучший по IoU) и `last_model.pt`.
