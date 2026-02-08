@@ -1,0 +1,15 @@
+numpy
+pandas
+rasterio
+tifffile
+matplotlib
+ipywidgets
+ipython
+opencv-python
+ultralytics
+shapely
+tqdm
+scikit-learn
+statsmodels
+gdown
+streamlit

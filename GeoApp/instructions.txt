@@ -1,0 +1,39 @@
+--- Первичная настройка ---
+
+Создать папку на диске например D:\Projects\GeoApp
+
+Открыть cmd (Win)
+
+C:\Users\User>D:
+
+D:\Projects\GeoApp>cd D:\Projects\GeoApp
+
+D:\Projects\GeoApp>py -3.12 -m venv .venv
+
+D:\Projects\GeoApp>.\.venv\Scripts\activate
+
+(.venv) D:\Projects\GeoApp>python -m pip install --upgrade pip
+
+(.venv) D:\Projects\GeoApp>python --version
+Python 3.12.0 <----------------------------------- ТУТ ДОЛЖНО БЫТЬ НЕ НИЖЕ 3.12.0 (Если ниже, то установить 3.12.0)
+
+(.venv) D:\Projects\GeoApp>python -m pip install -r requirements.txt
+
+(.venv) D:\Projects\GeoApp>python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+
+(.venv) D:\Projects\GeoApp>python -c "import torch; print(torch.__version__); print('CUDA:', torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else None)"
+
+
+Скачать веса модели по ссылке и положить в папку weights
+
+--- Последующий запуск ---
+
+Открыть cmd (Win)
+
+C:\Users\User>D:
+
+D:\Projects\GeoApp>cd D:\Projects\GeoApp
+
+D:\Projects\GeoApp>.venv\Scripts\activate
+
+(.venv) D:\Projects\GeoApp>streamlit run app.py
