@@ -75,8 +75,8 @@
 
 ### Обучение
 - `AdamW(weight_decay=1e-4)` с разными LR:
-  - encoder: **3e-6** (очень маленький, чтобы не “сломать” признаки),
-  - decoder/head: **3e-5** (выше, чтобы быстрее обучить декодер).
+  - encoder: **1e-5** (очень маленький, чтобы не “сломать” признаки), после достижения плато снижаем до **3e-6**,
+  - decoder/head: **1e-4** (выше, чтобы быстрее обучить декодер), после достижения плато снижаем до **3e-5**.
 - AMP + gradient accumulation: `batch=8`, `accum=4` (эффективный batch=32).
 - Gradient clipping: `max_grad_norm=1.0`.
 - Resume из `/content/drive/MyDrive/Models/last_unet.pt`, сохранение `best_unet.pt` и `last_unet.pt`.
